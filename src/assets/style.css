@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+td {
+  width: 100px;
+}
+
+.parent {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 40%;
+  height: 90vh;
+  background-color: black;
+  border-radius: 25px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.parent button {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(68, 168, 255);
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.parent button:hover {
+  cursor: pointer;
+}
+.searchbar {
+  margin-top: 12px;
+  height: 85px;
+  width: 213px;
+  margin-left: 130px;
+  border-radius: 25px;
+}
+
+.contact_list {
+  width: 100%;
+  height: calc(100% - 80px);
+  overflow: hidden;
+}
+
+.contact_list::-webkit-scrollbar {
+  overflow-x: scroll;
+}
+.ri-user-line {
+  margin-right: 68px;
+}
+.contact {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user_detail {
+  display: flex;
+  align-items: center;
+}
+
+.ri-user-line {
+  margin-right: 77px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons i {
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------------- */
+
+@media only screen and (max-width: 375px) {
+  .searchbar {
+    margin-left: -2px;
+  }
+  .ri-user-line {
+    margin-right: 29px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .parent button {
+    margin-left: -11px;
+  }
+  .form-control {
+    margin-left: -77px;
+  }
+}
+.contact_list {
+  margin-left: -9px;
+  margin-top: -20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .parent {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .icons i {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .form-control {
+    margin-left: 0px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) and (max-width: 912px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .parent {
+    width: 100%;
+    height: 100vh;
+    margin-left: -5px;
+  }
+  .searchbar {
+    margin-top: 10px;
+    height: 86px;
+    width: 50%;
+    margin-left: 223px;
+  }
+  .icons i {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+}
