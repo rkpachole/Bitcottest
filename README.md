@@ -1,0 +1,2 @@
+# bitcodemachinetest
+machine test
