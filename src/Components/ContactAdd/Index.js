@@ -165,9 +165,7 @@ function Index(props) {
                   setEditUserInfo({ ...editUserInfo, name: e.target.value })
                 }
               />
-              {error && error?.errName && (
-                <span className="text-danger">{error.errName}</span>
-              )}
+              
             </FormGroup>
             <FormGroup>
               <Label for="exampleEmail">Email</Label>
@@ -180,9 +178,7 @@ function Index(props) {
                   setEditUserInfo({ ...editUserInfo, email: e.target.value })
                 }
               />
-              {error && error?.errEmail && (
-                <span className="text-danger">{error.errEmail}</span>
-              )}
+            
             </FormGroup>
             <FormGroup>
               <Label for="examplePassword">Phone Number</Label>
@@ -195,9 +191,7 @@ function Index(props) {
                   setEditUserInfo({ ...editUserInfo, mobile: e.target.value })
                 }
               />
-              {error && error?.errPhone && (
-                <span className="text-danger">{error.errPhone}</span>
-              )}
+             
             </FormGroup>
             <FormGroup>
               <Label for="examplePassword">Address</Label>
@@ -210,9 +204,7 @@ function Index(props) {
                   setEditUserInfo({ ...editUserInfo, address: e.target.value })
                 }
               />
-              {error && error?.errAddress && (
-                <span className="text-danger">{error.errAddress}</span>
-              )}
+             
             </FormGroup>
           </Form>
         </ModalBody>
